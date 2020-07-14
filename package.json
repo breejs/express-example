@@ -30,7 +30,6 @@
   "devDependencies": {
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
-    "ava": "latest",
     "cross-env": "latest",
     "eslint": "6.x",
     "eslint-config-xo-lass": "latest",
@@ -59,8 +58,7 @@
     "lint": "yarn run lint:js && yarn run lint:md",
     "lint:js": "xo",
     "lint:md": "remark . -qfo",
-    "pretest": "yarn run lint",
-    "test": "cross-env NODE_ENV=test ava",
+    "test": "yarn run lint"
   },
   "xo": {
     "prettier": true,
