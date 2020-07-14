@@ -1,0 +1,72 @@
+{
+  "name": "express-example",
+  "description": "This repository is just for example purposes.",
+  "private": true,
+  "version": "0.0.0",
+  "author": "Nick Baugh <niftylettuce@gmail.com> (http://niftylettuce.com/)",
+  "bugs": {
+    "url": "https://github.com/breejs/express-example/issues",
+    "email": "niftylettuce@gmail.com"
+  },
+  "contributors": [
+    "Nick Baugh <niftylettuce@gmail.com> (http://niftylettuce.com/)"
+  ],
+  "dependencies": {
+    "@ladjs/graceful": "^1.0.3",
+    "body-parser": "^1.19.0",
+    "bree": "^1.1.13",
+    "cabin": "^8.0.4",
+    "crypto-random-string": "^3.2.0",
+    "dayjs": "^1.8.29",
+    "email-templates": "^7.1.0",
+    "express": "^4.17.1",
+    "express-request-id": "^1.4.1",
+    "is-string-and-not-blank": "^0.0.2",
+    "request-received": "^0.0.3",
+    "response-time": "^2.3.2",
+    "signale": "^1.4.0",
+    "validator": "^13.1.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "ava": "latest",
+    "cross-env": "latest",
+    "eslint": "6.x",
+    "eslint-config-xo-lass": "latest",
+    "fixpack": "latest",
+    "husky": "latest",
+    "lint-staged": "latest",
+    "remark-cli": "latest",
+    "remark-preset-github": "latest",
+    "xo": "0.25"
+  },
+  "engines": {
+    "node": ">= 12.11.0"
+  },
+  "homepage": "https://github.com/breejs/express-example",
+  "keywords": [
+    "express-example",
+    "lass"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/breejs/express-example"
+  },
+  "scripts": {
+    "lint": "yarn run lint:js && yarn run lint:md",
+    "lint:js": "xo",
+    "lint:md": "remark . -qfo",
+    "pretest": "yarn run lint",
+    "test": "cross-env NODE_ENV=test ava",
+  },
+  "xo": {
+    "prettier": true,
+    "space": true,
+    "extends": [
+      "xo-lass"
+    ]
+  }
+}
