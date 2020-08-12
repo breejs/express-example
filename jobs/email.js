@@ -51,7 +51,7 @@ const queue = require(queueFile);
       if (isCancelled) return;
 
       // if it's before the time we need to send the message then return early
-      if (Date.now() < new Date(result.date).getTime()) {
+      if (Date.now() < new Date(result.send_at).getTime()) {
         cabin.info('It it not time yet to send message', { result });
         return;
       }
