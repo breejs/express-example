@@ -15,7 +15,7 @@
     "@ladjs/graceful": "^1.0.3",
     "body-parser": "^1.19.0",
     "bree": "^1.1.13",
-    "cabin": "^8.0.4",
+    "cabin": "^11.0.0",
     "crypto-random-string": "^3.2.0",
     "dayjs": "^1.8.29",
     "email-templates": "^7.1.0",
